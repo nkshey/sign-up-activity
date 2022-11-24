@@ -20,11 +20,11 @@ class MainActivity : AppCompatActivity() {
             var email = findViewById<EditText>(R.id.input_email).text.toString()
             var password = findViewById<EditText>(R.id.input_password).text.toString()
 
-            if (email == "" && password == "") {
+            if (email.isEmpty() && password.isEmpty()) {
                 Toast.makeText(this, "Email and Password fields are empty", Toast.LENGTH_SHORT).show()
-            } else if (email == "") {
+            } else if (email.isEmpty()) {
                 Toast.makeText(this, "Email field is empty", Toast.LENGTH_SHORT).show()
-            } else if (password == "") {
+            } else if (password.isEmpty()) {
                 Toast.makeText(this, "Password field is empty", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, "Success!", Toast.LENGTH_SHORT).show()
